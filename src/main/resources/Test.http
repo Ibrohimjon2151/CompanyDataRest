@@ -1,0 +1,32 @@
+POST http://localhost:80/api/product
+Content-Type: application/json
+
+{
+"name": "Temir arra",
+  "code": "ketmon",
+  "category": "api/category/3",
+  "measurement": "api/measurement/1"
+}
+
+###
+POST http://localhost:80/api/category
+Content-Type: application/json
+
+{
+"name": "Arra",
+  "parentCategory":"/api/category/1"
+}
+
+###
+GET http://localhost:80/api/measurement/1
+Accept: application/json
+
+###
+POST http://localhost:80/api/measurement
+Content-Type: application/json
+
+{
+"name": "Baxodir Jalolov"
+}
+
+###
